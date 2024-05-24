@@ -1,0 +1,440 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --brand-color-light: #42ec9a;
+  --brand-color-default: #00a868;
+  --brand-color-dark: #00734d;
+
+  --dark-color-primary: #20252a;
+  --dark-color-seconday: #31383f;
+
+  --light-color-primary: #ffffff;
+  --light-color-secondary: #f7f9fd;
+  --light-color-tertiary: #eff4f8;
+  --light-color-quaternary: #e8e8e8;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  background-color: var(--light-color-secondary);
+  font-family: "Noto Sans", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: var(--light-color-primary);
+  justify-content: space-between;
+  height: 72px;
+  position: absolute;
+  width: 1359.67px;
+}
+
+header li a {
+  color: var(--dark-color-primary);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+#header-left {
+  padding: 24px 40px;
+}
+
+.menu-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+#header-right {
+  padding: 24px 40px;
+}
+
+.menu-right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+#btn-login {
+  padding: 12px 20px;
+  border-radius: 90px;
+  border: 2px solid var(--light-color-quaternary);
+  background: none;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: var(--dark-color-primary);
+  cursor: pointer;
+}
+
+#btn-subscribe {
+  padding: 12px 20px;
+  border-radius: 90px;
+  border: none;
+  background-color: var(--brand-color-light);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: var(--dark-color-primary);
+  cursor: pointer;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-image: url(./assets/image_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 640px;
+  padding: 258px 0 40px 40px;
+  top: 0;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 10px;
+  width: 501px;
+  height: 262px;
+  left: 40px;
+  top: 258px;
+}
+
+#hero .headline h1 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 700;
+  color: var(--light-color-primary);
+}
+
+#hero .headline p {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  color: var(--light-color-primary);
+}
+
+#hero button {
+  padding: 16px 36px;
+  width: 203px;
+  border-radius: 90px;
+  border: none;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: var(--dark-color-primary);
+  background-color: var(--brand-color-light);
+  cursor: pointer;
+}
+
+#content {
+  display: flex;
+  margin: 80px 0;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-color-secondary);
+}
+
+#content .frame-01 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 330.8px;
+  margin-left: 130px;
+}
+
+#content .frame-01 h2 {
+  color: var(--dark-color-primary);
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+}
+
+#content .frame-01 span {
+  color: var(--brand-color-default);
+}
+
+#content .frame-01 p {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+  color: var(--dark-color-primary);
+}
+
+#content .frame-01 button {
+  background-color: var(--brand-color-light);
+  padding: 16px 36px;
+  border: none;
+  border-radius: 90px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: var(--dark-color-primary);
+  margin-top: 10px;
+  width: 232px;
+  cursor: pointer;
+}
+
+#content img:hover {
+  cursor: pointer;
+}
+
+#services-stone {
+  background-color: var(--light-color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 56px;
+}
+
+#services-stone .frame-02 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#services-stone .frame-02 .services-title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--brand-color-dark);
+  text-transform: uppercase;
+}
+
+#services-stone .frame-02 h3 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+  color: var(--dark-color-primary);
+  width: 390px;
+}
+
+#services-stone .frame-02 .services-text {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+  color: var(--dark-color-primary);
+  width: 493px;
+}
+
+#services-stone .frame-02 a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+  color: var(--brand-color-default);
+  text-decoration: none;
+  position: relative;
+}
+
+#services-stone #btn-machine::after {
+  content: url(./assets/stone-arrow\ 1.svg);
+  padding-left: 210px;
+  position: absolute;
+  top: 1px;
+}
+
+#services-stone #btn-rates::after {
+  content: url(./assets/stone-arrow\ 1.svg);
+  padding-left: 325px;
+  position: absolute;
+  top: 1px;
+}
+
+#services-pj {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 56px;
+  gap: 40px;
+  background-color: var(--light-color-primary);
+}
+
+#services-pj .frame-03 {
+  display: flex;
+  width: 456px;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#services-pj .frame-03 .services-title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--brand-color-dark);
+  text-transform: uppercase;
+}
+
+#services-pj .frame-03 h3 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+  color: var(--dark-color-primary);
+  width: 436px;
+}
+
+#services-pj .frame-03 .services-text {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+  color: var(--dark-color-primary);
+}
+
+#services-pj .frame-03 #meet-btn {
+  gap: 15px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+  color: var(--brand-color-default);
+  text-decoration: none;
+  position: relative;
+}
+
+#services-pj .frame-03 #meet-btn::after {
+  content: url(./assets/stone-arrow\ 1.svg);
+  padding-left: 10px;
+  position: absolute;
+  top: 2.5px;
+}
+
+#services-pj .services-apps {
+  display: flex;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+#call-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+  gap: 24px;
+}
+
+#call-action h3 {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  color: var(--dark-color-primary);
+  width: 774px;
+}
+
+#call-action h3 span {
+  color: var(--brand-color-default);
+}
+
+#call-action .cta-buttons {
+  display: flex;
+  gap: 16px;
+  margin-right: 50px;
+}
+
+#call-action .cta-buttons .cta-button-detail {
+  width: 232px;
+  padding: 16px 36px;
+  background-color: var(--brand-color-light);
+  border-radius: 90px;
+  border: none;
+  color: var(--dark-color-primary);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#call-action .cta-buttons .cta-button-register {
+  width: 199px;
+  padding: 16px 36px;
+  background-color: var(--light-color-primary);
+  border: 2px solid var(--light-color-quaternary);
+  border-radius: 90px;
+  color: var(--dark-color-primary);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#top-footer {
+  display: flex;
+  background-color: var(--dark-color-seconday);
+  padding: 80px 0;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+#top-footer img {
+  width: 50px;
+}
+
+#top-footer h4 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  color: var(--light-color-primary);
+}
+
+#top-footer p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: var(--light-color-primary);
+}
+
+#top-footer a {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: var(--brand-color-default);
+  text-decoration: none;
+  position: relative;
+}
+
+#top-footer a::after {
+  content: url(./assets/stone-arrow\ 1.svg);
+  padding-left: 10px;
+  position: absolute;
+  top: 2.5px;
+}
+
+#top-footer .chat,
+#top-footer .work,
+#top-footer .store {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer {
+  background-color: var(--dark-color-primary);
+  display: flex;
+  justify-content: space-between;
+  padding: 88px 44px;
+  align-items: center;
+}
+
+footer ul {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
